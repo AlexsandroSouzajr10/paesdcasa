@@ -347,10 +347,3 @@ window.addEventListener("orientationchange", function() {
     console.log('[event]orientationcharge: portrait mode', window.orientation)
   }
 });
-
-var output = document.querySelector('#output')
-output.innerHTML = "orientation is " + screen.orientation.type
-screen.orientation.addEventListener('change', function(){
-    console.log("new orientation is ", screen.orientation.type)
-    output.innerHTML = "new orientation is " + screen.orientation.type
-});

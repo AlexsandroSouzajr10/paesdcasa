@@ -45,6 +45,7 @@ header nav {
   background: var(--nav-color);
   padding: 15px 0 15px;
   z-index: 20;
+  top: 0;
 }
 
 header .logo h1 {
