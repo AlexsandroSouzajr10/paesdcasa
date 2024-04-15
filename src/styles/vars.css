@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+:root{
+  --grid-gap: 32px;
+  --gap: 16px;
+  --max-width: max-content;
+  --width: 45em;
+  --width-992: 45em;
+  --width-600: 18em;
+}
+
+:root {
+  --font-system: Roboto,"Open Sans", sans-serif;
+  --logo: "Tilt Neon", sans-serif;
+  --bg-footer: url("/src/assets/logo/footer/bg-footer.jpg");
+  
+  --background: #fff;
+  --nav-color: #FEFCF3;
+  --logo-color: #000;
+  --navlinks: #000;
+  --menu: #2f3134;
+  --navigation-bar: #fff;
+  --navigation-underline: #000;
+  --navigation-bar-underline: #f7291a;
+  --navigation-bar-navlinks: #f7291a;
+  --navigation-border: #000;
+  --switch-color: #000;
+
+  /* --logo-color-sticky: #000;
+  --navlinks-color-sticky: #000;
+  --menu-color-sticky: #2f3134;
+  --navlinks-underline-sticky: #000;
+  --navigation-border-sticky: #ef0000;
+  --switch-color-sticky: #000; */
+
+  --about-title: #ff8e15;
+  --about-paragraph: #333;
+  --about-textImg-heading: #432d2f;
+  --about-textImg-paragraph: #0c0a0b;
+
+  --banner-bg: #D44A47;
+  --banner-heading-xl: #F49223;
+  --banner-heading-xl-two: #F9423A;
+  --banner-paragraph: #525662;
+  --banner-paragraph-two: #525662;
+
+  /* --offset-card-item-bg: #fff;
+  --offset-card-item-color: #000; */
+
+  --product-item-img-ilustrativa: #111;
+  --products-combos-heading-color: #ff4b11;
+  --products-combos-paragraph-color: #4a4f51;
+  --products-combos-order-color: #000;
+
+  --splide-bullet-active: #ff4b11;
+
+  --swiper-bullet-inactive: #000;
+  --swiper-bullet-inactive-opacity: .2;
+
+  --slide-content-title: #FF2700;
+  --slide-content-order: #000;
+
+  --card-title: #FF2700;
+  --card-description: #6C6868;
+
+  --service-bg: #fff;
+  --service-heading: #333;
+  --service-paragraph: #665;
+  
+  --testimonials-title: #000;
+  --testimonials-box: #fff;
+  --testimonials-name-primary: #3d3d3d;
+  --testimonials-name-secondary: #979797;
+  --testimonials-text-client: #4b4b4b;
+  --loading-bg: #FE5000;
+}
+body.darkmode {
+  --background: #070606;
+  --nav-color: #0c0c0c;
+  --logo-color: #f5f5f5;
+  --navlinks: #f5f5f5;
+  --menu: #f5f5f5;
+  --navigation-bar: #111;
+  --navigation-underline: #f5f5f5;
+  --navigation-bar-underline: #f5f5f5;
+  --navigation-border: #f5f5f5;
+  --navigation-bar-navlinks: #f5f5f5;
+  --switch-color: #f5f5f5;
+
+  /* --logo-color-sticky: #f5f5f5;
+  --navlinks-color-sticky: #f5f5f5;
+  --menu-color-sticky: #f5f5f5;
+  --navlinks-underline-sticky: #f5f5f5;
+  --navigation-border-sticky: #f5f5f5;
+  --switch-color-sticky: #f5f5f5; */
+
+  --about-title: #e0e0e0;
+  --about-paragraph: #e0e0e0;
+  --about-textImg-heading: #e0e0e0;
+  --about-textImg-paragraph: #e0e0e0;
+  --about-description-img: #b3b3b3;
+
+  --banner-bg: #0f0d0d;
+  --banner-heading-xl: #e0e0e0;
+  --banner-heading-xl-two: #e0e0e0;
+  --banner-paragraph: #e0e0e0;
+  --banner-paragraph-two: #e0e0e0;
+
+  /* --offset-card-item-bg: rgba(25, 25, 25, 0.9);
+  --offset-card-item-color: #d2d2d2; */
+
+  --product-item-img-ilustrativa: #202020;
+  --products-combos-heading-color: #e0e0e0;
+  --products-combos-paragraph-color: #e0e0e0;
+  --products-combos-order-color: #e0e0e0;
+
+  --swiper-bullet-inactive: #e0e0e0;
+  --swiper-bullet-inactive-opacity: .6;
+
+  --slide-content-title: #e0e0e0;
+  --slide-content-order: #e0e0e0;
+
+  --card-title: #e0e0e0;
+  --card-description: #b3b3b3;
+
+  --service-bg: #121214;
+  --service-heading: #e0e0e0;
+  --service-paragraph: #b3b3b3;
+
+  --testimonials-title: #d2d2d2;
+  --testimonials-box: #090a0c;
+  --testimonials-name-primary: #d2d2d2;
+  --testimonials-name-secondary: #d2d2d2;
+  --testimonials-text-client: #d2d2d2;
+  --loading-bg: #0f0f0f;
+}

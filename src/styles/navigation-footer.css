@@ -1,0 +1,280 @@
+header :where(nav, .navigation-bar ul) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header :where(nav, .toggle, .toggle span, .navigation-bar, .navigation-bar ul) {
+  transition: 0.3s;
+}
+header :where(nav, .toggle span, .navigation-bar a) {
+  position: relative;
+}
+header :where(nav, .toggle, .navigation-bar .underline) {
+  position: absolute;
+}
+header
+  :is(
+    nav,
+    .navigation-bar a:hover .underline,
+    .navigation-bar li.active .underline
+  ) {
+  width: 100%;
+}
+header nav .toggle {
+  cursor: pointer;
+}
+header .navigation-bar .underline {
+  background: var(--navigation-underline);
+}
+header
+  :is(
+    nav,
+    .navigation-bar.show,
+    .navigation-bar a:hover .underline,
+    .navigation-bar li.active .underline
+  ) {
+  left: 0;
+}
+
+header {
+  height: max-content;
+}
+
+header nav {
+  position: fixed;
+  background: var(--nav-color);
+  padding: 15px 0 15px;
+  z-index: 20;
+}
+
+header .logo h1 {
+  color: var(--logo-color);
+  font-size: 20px;
+  font-family: var(--logo);
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+header .logo h1 span {
+  display: flex;
+  color: var(--logo-color);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+header .logo img {
+  position: absolute;
+  top: 0;
+  transform: translate(-98%, -12%);
+  width: 80px;
+}
+
+.img-logo {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -4px;
+}
+
+header nav .logo {
+  flex-basis: 30%;
+  padding-left: 50px;
+}
+
+header nav .navigation-bar a {
+  color: #fff;
+}
+
+header nav .toggle span {
+  background-color: var(--menu);
+  bottom: 5px;
+}
+
+header nav .toggle.active {
+  left: 32%;
+}
+
+header nav .toggle.active .first {
+  top: 16px;
+  transform: rotate(-45deg);
+}
+
+header nav .toggle.active .last {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+header nav .navigation-bar a {
+  color: var(--navlinks);
+}
+
+header .navigation-bar.show {
+  width: 40%;
+  background: var(--navigation-bar);
+}
+
+header .navigation-bar.show a {
+  color: var(--navigation-bar-navlinks) !important;
+}
+
+header .navigation-bar.show ul li {
+  animation: show 0.6s backwards;
+}
+
+header .navigation-bar.show ul li.active {
+  animation-delay: 0.2s;
+}
+
+header .navigation-bar.show ul li:nth-child(n + 3) {
+  animation-delay: 0.4s;
+}
+
+header .navigation-bar.show .underline {
+  background: var(--navigation-bar-underline);
+}
+
+header .navigation-bar .navigation_link .navlinks {
+  flex: 0 0 auto;
+  padding-inline: 0 20px;
+}
+
+header .navigation-bar .navigation_link .border {
+  height: 24px;
+  border-right: 1px solid var(--navigation-border);
+}
+
+header .navigation-bar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+.switch {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.switch-light,
+.switch-dark {
+  position: absolute;
+  top: 0%;
+  left: 120%;
+  transform-origin: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in;
+}
+
+.switch-light {
+  color: var(--switch-color);
+  font-size: 1.4rem;
+  visibility: visible;
+}
+
+.darkmode .switch-light {
+  font-size: 0;
+  visibility: hidden;
+}
+
+.switch-dark {
+  color: var(--switch-color);
+  font-size: 0;
+  visibility: hidden;
+}
+
+.darkmode .switch-dark {
+  font-size: 1.4rem;
+  visibility: visible;
+}
+
+header .navigation-bar .underline {
+  display: block;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+header nav .toggle {
+  display: none;
+  top: 30px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  z-index: 21;
+}
+
+header nav .toggle:focus {
+  outline: none;
+}
+
+header nav .toggle .hide {
+  transition: 0s;
+  visibility: hidden;
+}
+
+header nav .toggle span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  border-radius: 40px;
+}
+
+header nav .toggle span:not(:last-of-type) {
+  margin-bottom: 6px;
+}
+
+footer {
+  background-image: var(--bg-footer);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-image: fill 0 linear-gradient(#00000066, #00000066);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer .text {
+  display: block;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 35px;
+}
+
+footer .text img {
+  position: absolute;
+  transform: translate(-50%, -75%);
+  width: 120px;
+  height: auto;
+}
+
+footer .text h2 {
+  color: #fff;
+  font-size: 19px;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+}
+
+footer .text .logo {
+  font-family: var(--logo);
+  font-size: 24px;
+  letter-spacing: 1.9px;
+}
+
+footer .text p {
+  color: #fff;
+  line-height: 27px;
+  margin-bottom: 20px;
+  font-family: var(--font-system);
+}
+
+footer .text span {
+  color: #fff;
+  margin-top: 30px;
+  font-family: var(--font-system);
+}

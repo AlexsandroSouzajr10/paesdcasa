@@ -1,0 +1,55 @@
+@keyframes fade-in{
+    5%{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    90%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes load{
+    to{
+      transform: scaleX(1);
+    }
+  }
+  
+  @-webkit-keyframes fade-in{
+    5%{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    90%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @-webkit-keyframes load{
+    to{
+      transform: scaleX(1);
+    }
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+      translate: -50px 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes show {
+    0% {
+      opacity: 0;
+      translate: -50px 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
