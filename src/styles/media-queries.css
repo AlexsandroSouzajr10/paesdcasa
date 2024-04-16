@@ -154,10 +154,6 @@
     display: block;
     padding-top: 50px;
   }
-  header .navigation-bar .navigation_link .navlinks {
-    text-align: left;
-    padding: 14px 0;
-  }
 }
 
 @media only screen and (max-width: 576px) {
