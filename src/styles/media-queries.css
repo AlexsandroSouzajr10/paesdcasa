@@ -391,8 +391,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-  :is(.paragraph) {
-    text-align: left;
+  :is(.heading-xl, .paragraph) {
+    text-align: center;
     margin: auto;
     margin-right: 30px;
   }
