@@ -712,13 +712,13 @@
 
 /* = // Slides Splide & Swiper = */
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .posters__section .poster__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .posters__section .poster__wrapper {
     grid-template-columns: 1fr;
   }

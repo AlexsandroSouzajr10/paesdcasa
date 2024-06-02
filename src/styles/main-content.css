@@ -2,29 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 100%;
     height: 100vh;
-    position: relative;
-    /* background: rgba(84, 77, 30, 0.5); */
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.4));
     margin-bottom: 3em;
   }
 
-  .hero video{
+  .hero::after{
+    content: "";
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  
-  .hero img{
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 100vh;
+    background: url(/src/assets/home/images/baguetes.jpg) no-repeat center/cover;
     z-index: -1;
   }
   
@@ -309,7 +301,7 @@
     margin-top: 2rem;
     object-fit: cover;
     justify-self: center;
-    border-radius: 0 20px;
+    border-radius: 10px;
   }
   
   .banner-image-two {
@@ -319,7 +311,7 @@
     margin-top: 2rem;
     object-fit: cover;
     justify-self: center;
-    border-radius: 30px 6px 30px 6px;
+    border-radius: 10px;
   }
   
   .banner-inner {
@@ -591,8 +583,11 @@
   }
 
   .card__wrapper .card .image-box img{
-    width: 100%;
+    max-width: 100%;
+    width: 350px;
     height: 100%;
+    display: block;
+    margin: auto;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -682,14 +677,15 @@
 
   .posters__section .poster__wrapper{
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1em;
-    gap: 1rem;
     grid-gap: 1rem;
   }
 
   .poster__wrapper .poster__card .image__box img{
-    width: 100%;
+    max-width: 100%;
+    width: 350px;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;

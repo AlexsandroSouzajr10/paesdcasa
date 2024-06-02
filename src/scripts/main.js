@@ -321,7 +321,7 @@ var swiper = new Swiper(".slide-container", {
     520: {
       slidesPerView: 2,
     },
-    768: {
+    769: {
       slidesPerView: 3,
     },
     1000: {
@@ -340,10 +340,10 @@ window.addEventListener('load', function () {
   })
 });
 
-window.addEventListener("orientationchange", function() {
-  if (window.orientation == 90 || window.orientation == -90){
-          console.log('[event]orientationcharge: landscape mode', window.orientation)
-  }else {
-    console.log('[event]orientationcharge: portrait mode', window.orientation)
-  }
-});
+// window.addEventListener("orientationchange", function() {
+//   if (window.orientation == 90 || window.orientation == -90){
+//           console.log('[event]orientationcharge: landscape mode', window.orientation)
+//   }else {
+//     console.log('[event]orientationcharge: portrait mode', window.orientation)
+//   }
+// });

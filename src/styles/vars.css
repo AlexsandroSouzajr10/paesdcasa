@@ -99,37 +99,37 @@ body.darkmode {
   --navigation-border-sticky: #f5f5f5;
   --switch-color-sticky: #f5f5f5; */
 
-  --about-title: #e0e0e0;
-  --about-paragraph: #e0e0e0;
-  --about-textImg-heading: #e0e0e0;
-  --about-textImg-paragraph: #e0e0e0;
+  --about-title: #ededed;
+  --about-paragraph: #ededed;
+  --about-textImg-heading: #ededed;
+  --about-textImg-paragraph: #ededed;
   --about-description-img: #b3b3b3;
 
   --banner-bg: #0f0d0d;
-  --banner-heading-xl: #e0e0e0;
-  --banner-heading-xl-two: #e0e0e0;
-  --banner-paragraph: #e0e0e0;
-  --banner-paragraph-two: #e0e0e0;
+  --banner-heading-xl: #ededed;
+  --banner-heading-xl-two: #ededed;
+  --banner-paragraph: #ededed;
+  --banner-paragraph-two: #ededed;
 
   /* --offset-card-item-bg: rgba(25, 25, 25, 0.9);
   --offset-card-item-color: #d2d2d2; */
 
   --product-item-img-ilustrativa: #202020;
-  --products-combos-heading-color: #e0e0e0;
-  --products-combos-paragraph-color: #e0e0e0;
-  --products-combos-order-color: #e0e0e0;
+  --products-combos-heading-color: #ededed;
+  --products-combos-paragraph-color: #ededed;
+  --products-combos-order-color: #ededed;
 
-  --swiper-bullet-inactive: #e0e0e0;
+  --swiper-bullet-inactive: #ededed;
   --swiper-bullet-inactive-opacity: .6;
 
-  --slide-content-title: #e0e0e0;
-  --slide-content-order: #e0e0e0;
+  --slide-content-title: #ededed;
+  --slide-content-order: #ededed;
 
-  --card-title: #e0e0e0;
+  --card-title: #ededed;
   --card-description: #b3b3b3;
 
   --service-bg: #121214;
-  --service-heading: #e0e0e0;
+  --service-heading: #ededed;
   --service-paragraph: #b3b3b3;
 
   --testimonials-title: #d2d2d2;
