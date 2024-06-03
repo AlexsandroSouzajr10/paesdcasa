@@ -99,14 +99,14 @@ body.darkmode {
   --navigation-border-sticky: #f5f5f5;
   --switch-color-sticky: #f5f5f5; */
 
-  --about-title: #ededed;
+  --about-title: #ffd25e;
   --about-paragraph: #ededed;
   --about-textImg-heading: #ededed;
   --about-textImg-paragraph: #ededed;
   --about-description-img: #b3b3b3;
 
   --banner-bg: #0f0d0d;
-  --banner-heading-xl: #ededed;
+  --banner-heading-xl: #ffd25e;
   --banner-heading-xl-two: #ededed;
   --banner-paragraph: #ededed;
   --banner-paragraph-two: #ededed;

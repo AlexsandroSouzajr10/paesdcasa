@@ -113,7 +113,7 @@ header .navigation-bar.show {
   background: var(--navigation-bar);
 }
 
-header .navigation-bar.show a {
+header .navigation-bar.show .navlinks a {
   color: var(--navigation-bar-navlinks) !important;
 }
 
@@ -143,6 +143,10 @@ header .navigation-bar.show ul li:nth-child(6) {
 
 header .navigation-bar.show ul li:nth-child(7) {
   animation-delay: 1.2s;
+}
+
+header .navigation-bar.show ul .instagram {
+  animation-delay: 1.4s;
 }
 
 header .navigation-bar.show .underline {
@@ -205,6 +209,32 @@ header .navigation-bar a {
 .darkmode .switch-dark {
   font-size: 1.4rem;
   visibility: visible;
+}
+
+header .navigation-bar.show .instagram__menu {
+  animation: show 0.6s backwards;
+}
+
+.instagram__menu{
+  display: none;
+  border-top: 1px solid #000;
+  width: 90px;
+  max-width: 100%;
+  margin: auto;
+  padding: 1em;
+}
+
+.instagram__menu i{
+  font-size: 1.45em;
+}
+
+.instagram__menu i:hover{
+  color: #777;
+}
+
+.instagram__navigation{
+  font-size: 20px;
+  margin: 0 10px;
 }
 
 header .navigation-bar .underline {
