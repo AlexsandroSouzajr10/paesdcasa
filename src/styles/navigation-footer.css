@@ -228,13 +228,15 @@ header .navigation-bar.show .instagram__menu {
   font-size: 1.45em;
 }
 
-.instagram__menu i:hover{
+.instagram__menu i:hover,
+.instagram__navigation:hover{
   color: #777;
 }
 
 .instagram__navigation{
-  font-size: 20px;
+  font-size: 1.29em;
   margin: 0 10px;
+  margin-top: 1.5px;
 }
 
 header .navigation-bar .underline {
