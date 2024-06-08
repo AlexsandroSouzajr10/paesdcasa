@@ -429,12 +429,14 @@
 @media only screen and (min-width: 48rem) {
   .banner-image {
     order: 1;
-    max-width: 28rem;
+    max-width: 100%;
+    width: 28rem;
     height: auto;
   }
   .banner-image-two {
     order: 0;
-    max-width: 25rem;
+    max-width: 100%;
+    width: 25rem;
     height: auto;
   }
 }
