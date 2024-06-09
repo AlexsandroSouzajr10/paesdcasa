@@ -340,6 +340,17 @@ window.addEventListener('load', function () {
   })
 });
 
+let pictures = [
+  "/src/assets/home/images/baguetes.jpg",
+  "/src/assets/home/images/image-4.jpg",
+  "/src/assets/home/images/image-2.jpg",
+  "/src/assets/home/images/image-3.jpg",
+];
+
+let randomImage = pictures[Math.floor(Math.random() * pictures.length)];
+let image = "<img src='" + randomImage + "'/>";
+document.getElementById("pictures").innerHTML = image;
+
 // window.addEventListener("orientationchange", function() {
 //   if (window.orientation == 90 || window.orientation == -90){
 //           console.log('[event]orientationcharge: landscape mode', window.orientation)
