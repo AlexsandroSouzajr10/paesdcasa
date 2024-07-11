@@ -3,10 +3,6 @@
     max-width: 100%;
     height: auto;
   }
-  .text__box p {
-    /* font-size: 1.75em; */
-    line-height: 1.5;
-  }
 }
 
 @media only screen and (max-width: 945px) {
@@ -15,23 +11,8 @@
   }
 }
 
-@media only screen and (max-width: 920px) {
-  header .logo img {
-    transform: translate(-90%, -14%);
-  }
-}
 
-@media only screen and (max-width: 840px){
-  header .logo img {
-    width: 70px;
-    transform: translate(-90%, -8%);
-  }
-  header .navigation-bar .navigation_link .navlinks {
-    padding: 0 7px;
-  }
-}
-
-@media (min-width: 769px) {
+@media (min-width: 921px) {
   .switch {
     position: relative;
     top: 0.25rem;
@@ -41,7 +22,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 920px) {
   header nav {
     display: block;
     width: 100%;
@@ -49,15 +30,15 @@
     transition: 0.3s ease-in-out;
   }
   header .logo img {
-    transform: translate(-98%, -12%);
+    transform: translate(-98%, -18%);
   }
   header nav .logo {
     display: flex;
     justify-content: center;
   }
   header nav .logo h1 span {
-    font-size: 9px;
-    margin-left: 38px;
+    font-size: .65rem;
+    margin-left: 3.85rem;
   }
   header .navigation-bar {
     position: fixed;
@@ -76,12 +57,12 @@
     text-align: center;
     padding: 14px 0;
   }
-  header .navigation-bar .navigation_link .navlinks {
+  header .navigation-bar .navigation__links .navlink {
     flex: 1;
     padding: 0 10px;
     display: block;
   }
-  header .navigation-bar .navigation_link .border {
+  header .navigation-bar .navigation__links .border {
     border-right: none;
   }
   header nav .toggle {
@@ -91,91 +72,52 @@
     top: 50%;
   }
   header .navigation-bar .switch {
-    bottom: 20.65em; /* -3.2rem */ /* -6.8rem | (Com o tradutor) -7.95rem */
-    right: 0;
+    bottom: 19.89em;
+    left: 0;
   }
-  /* header .navigation-bar .switch-light, .switch-dark {
-    top: -8.9em;
+  header .navigation-bar .navigation__links {
+    display: block;
+    padding-top: 40px;
   }
-  header .navigation-bar .switch-dark {
-    top: -8.9em;
-  } */
+  header .navigation-bar .navigation__links .navlink {
+    text-align: center;
+    padding: 14px 0;
+  }
   header .navigation-bar .instagram__menu{
     display: block;
   }
   header .navigation-bar .instagram__navigation{
     display: none;
   }
-  header .navigation-bar .navigation_link {
-    display: block;
-    padding-top: 40px;
-  }
-  header .navigation-bar .navigation_link .navlinks {
-    text-align: center;
-    padding: 14px 0;
-  }
-  .about__us .content img {
+  .about__us .about__content img {
     margin-bottom: 3%;
   }
-  .text__box h1 {
-    /* font-size: 40px; */
+  .about__content h1 {
     margin-bottom: 25px;
-    text-align: center;
   }
-  .text__box p {
-    /* font-size: 1.75em; */
+  .about__content p {
     line-height: 30px;
   }
-  footer .text p {
+  footer .container__footer p {
     line-height: 27px;
     font-size: 17px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  header nav {
-    display: block;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-  }
-  header .navigation-bar .navigation_link .navlinks {
-    flex: 1;
-    padding: 0 10px;
-    display: block;
-  }
-  header nav .toggle {
-    display: block;
-  }
-  header nav .toggle.active {
-    top: 45%;
-  }
-  header .navigation-bar .switch {
-    bottom: 21.6em; /* -4.1rem */ /* 7.55rem | (Com o tradutor) -8.74rem */
-    right: 10px;
-  }
-  header .navigation-bar .navigation_link {
-    display: block;
-    padding-top: 50px;
-  }
-  header .navigation-bar .navigation_link .navlinks {
-    padding: 14px 0;
-  }
-}
-
-@media only screen and (max-width: 576px) {
   header {
-    padding: 0.5px;
+    padding: .5px;
   }
   header nav .logo {
     display: flex;
     justify-content: center;
   }
+  header .navigation-bar .navigation__links {
+    padding-top: 60px;
+  }
   header .navigation-bar .switch {
-    bottom: 20.35em; /* -2.75rem */ /* 6.45rem | (Com o tradutor) -7.60rem */
-    right: -10px;
+    bottom: 19.85em;
+    left: 10px;
   }
   header nav .toggle.active {
     top: 45%;
@@ -195,14 +137,11 @@
     height: 100%;
   }
   header nav .toggle.active {
-    left: 40%; /*36%*/
+    left: 40%;
   }
   header .navigation-bar.show {
-    width: 55%; /*48%*/
+    width: 55%;
     padding: 20px;
-  }
-  .text__box p {
-    /* font-size: 1.35rem; */
   }
 }
 
@@ -269,97 +208,21 @@
   }
 }
 
-/* @media only screen and (max-width: 655px) and (orientation: landscape) {
-  .about__us {
-    height: 20vh;
-  }
-  .about__us .content {
-    margin-top: 60px;
+@media only screen and (max-width: 735px){
+  .hero__content h2{
+    font-size: 2.95rem;
   }
 }
 
-@media only screen and (max-width: 640px) and (orientation: landscape) {
-  .about__us {
-    margin-bottom: 30em;
-    margin-top: -5em;
-  }
-} */
-
-@media only screen and (max-width: 720px) {
-  .content__image h2 {
-    max-width: 500px;
-    margin: auto;
-  }
-  .content__image h2::after {
-    width: 150px;
-    bottom: -15px;
-  }
-}
-
-@media only screen and (max-width: 535px) {
-  .about__us .content img {
-    margin-bottom: 3%;
-  }
-  .text__box h1 {
-    /* font-size: 35px; */
-    margin-bottom: 25px;
-  }
-  .text__box p {
-    /* font-size: 1.4rem; */
+@media only screen and (max-width: 525px){
+  .hero__content h2{
+    font-size: 2.5rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .content__image h2 {
-    font-size: 3em;
-    max-width: 400px;
-  }
-  .content__image h2 {
-    margin-bottom: 10px;
-  }
-  .content__image h2::after {
-    width: 150px;
-    bottom: -25px;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  .content-image h2 {
-    font-size: 2.5em;
-  }
-}
-
-/* == Logo Pães d'Casa == */
-@media only screen and (max-width: 495px) {
-  .content .container__content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .content .container__content .text {
-    position: relative;
-    bottom: 3em;
-  }
-}
-/* == // Logo Pães d'Casa == */
-
-/* @media screen and (max-width: 1180px){
-    .about__us{
-      width: 100%;
-      height: auto;
-      padding: 50px 0;
-      margin-top: -2em;
-      margin-bottom: 0;
-    }
-    .text__box p{
-      font-size: 30px;
-      line-height: 40px;
-    }
-  } */
-
-@media only screen and (max-width: 1185px) {
-  .bg {
-    max-width: 96%;
+  .about__content h1 {
+    font-size: 2.45rem;
   }
 }
 
@@ -443,17 +306,6 @@
     max-width: 22rem;
   }
 }
-
-/* @media only screen and (min-width: 64rem) {
-  .banner-image {
-    max-width: 26rem;
-    height: auto;
-  }
-  .banner-image-two {
-    max-width: 25rem;
-    height: auto;
-  }
-} */
 
 @media only screen and (max-width: 884px) {
   .container-two {
@@ -553,171 +405,17 @@
   }
 }
 
-@media only screen and (max-width: 1185px) {
-  .slider__container {
-    max-width: calc(80% - 20px);
-  }
-  .slider__container .slider__box {
-    max-width: calc(500px - 20px);
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .slider__container {
-    max-width: calc(100% - 20px);
-  }
-  .slider__container .slider__box {
-    max-width: calc(400px - 20px);
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .slider__container {
-    display: flex;
-    max-width: calc(100% - 20px);
-  }
-  .slider__container .slider__box {
-    max-width: calc(100% - 20px);
-  }
-  .slider .container-images {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .heading-xl {
-    font-size: clamp(2.2rem, 3vw, 4.241rem);
-  }
-  .slider__container .slider__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-  }
-  .slider .container-images {
-    max-width: calc(400px - 30px);
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .slider .container-images {
-    max-width: calc(360px - 30px);
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .slider .container-images {
-    max-width: calc(350px - 50px);
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .slider .container-images {
-    max-width: calc(300px - 50px);
-  }
-  .heading-xl {
-    font-size: clamp(1.848rem, 2vw, 4.241rem);
-  }
-  .heading-xl-two {
-    font-size: clamp(2rem, 2vw, 4.241rem);
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .slider .container-images {
-    max-width: calc(290px - 50px);
-    display: flex;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  .slider .container-images {
-    max-width: calc(260px - 50px);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .title__product {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  .title__product {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 417px) {
-  .title__product h2 {
-    font-size: 28px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .title__product {
-    font-size: 25px;
-  }
-}
 
 @media only screen and (max-width: 680px) {
-  .card__container {
+  .menu__cards__container {
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
-  .card__container .card__item {
+  .menu__cards__container .menu__card__item {
     margin-bottom: 15px;
   }
 }
-
-/* = Slides Splide & Swiper = */
-
-@media only screen and (max-width: 1100px) {
-  .splide {
-    max-width: 960px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .splide {
-    max-width: 960px;
-    margin: 1rem;
-    margin-bottom: 3em;
-  }
-  .splide__slide .splide__slide__container {
-    aspect-ratio: 16/9;
-  }
-  .splide__pagination {
-    bottom: -1em;
-  }
-}
-
-@media only screen and (max-width: 600px){
-  .splide{
-    max-width: 460px;
-    margin: auto;
-    padding: 1em;
-  }
-}
-
-@media only screen and (max-width: 280px) {
-  .splide__slide__container .text {
-    bottom: 5.5em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .swiper-navBtn {
-    display: none;
-  }
-  .swiper-bullet {
-    display: block;
-  }
-}
-
-/* = // Slides Splide & Swiper = */
 
 @media (max-width: 768px) {
   .posters__section .poster__wrapper {
@@ -727,22 +425,6 @@
 
 @media (max-width: 600px) {
   .posters__section .poster__wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .services__container {
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-    gap: 1rem;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .services__container {
     grid-template-columns: 1fr;
   }
 }
