@@ -12,6 +12,19 @@ navToggle.addEventListener("click", () => {
   navNavigationBar.classList.toggle("show");
 });
 
+const navLink = document.querySelectorAll(".navlink a");
+
+function linkActive() {
+  navLink.forEach(i => i.classList.remove("active"));
+  this.classList.add("active");
+
+  navNavigationBar.classList.remove("show")
+  navToggle.classList.remove("active");
+  navSpanMiddle.classList.toggle("hide");
+}
+
+navLink.forEach(i => i.addEventListener('click', linkActive));
+
 (function () {
   let darkMode = localStorage.getItem("darkMode");
   const darkSwitch = document.getElementById("switch");
