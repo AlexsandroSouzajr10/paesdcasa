@@ -169,3 +169,19 @@ $(document).ready(function(){
         );
       });
   });
+
+  const heroImage = document.querySelectorAll(".heroImage");
+  const bgTitle = document.querySelectorAll(".bgTitle");
+  const cardsImage = document.querySelectorAll(".imageCard")
+  
+  window.addEventListener('load', () => {
+      heroImage.forEach(item => {
+          item.classList.remove("heroImage")
+      })
+      bgTitle.forEach(item => {
+          item.classList.remove("bgTitle")
+      })
+      cardsImage.forEach(item => {
+          item.classList.remove("imageCard")
+      })
+  });
