@@ -107,16 +107,8 @@ p {
   }
   
   .hero__content .btn:hover {
-    /* background: #ED1D24 radial-gradient(circle, transparent 1%, #ED1D24 1%)
-      center/15000%; */
       background: transparent;
   }
-  
-  /* .hero__content .btn:active {
-    background-color: #F6D155;
-    background-size: 100%;
-    transition: background 0s;
-  } */
 
   .about__us {
     width: 100%;
