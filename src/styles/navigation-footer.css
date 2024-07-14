@@ -20,6 +20,7 @@ header .logo h1 {
 
 header .logo h1 span {
   display: flex;
+  text-align: left;
   color: var(--logo-color);
   font-size: .7rem;
   font-weight: 400;
@@ -29,8 +30,8 @@ header .logo h1 span {
 header .logo img {
   position: absolute;
   top: 0;
-  transform: translate(-98%, -18%);
-  width: 80px;
+  transform: translate(-110%, 18%);
+  width: 50px;
 }
 
 header nav .logo {
@@ -274,8 +275,9 @@ footer .container__footer {
 footer .container__footer img {
   position: absolute;
   transform: translate(-50%, -75%);
-  width: 120px;
+  width: 110px;
   height: auto;
+  padding-bottom: 10px;
 }
 
 footer .container__footer .logo {
