@@ -1,4 +1,5 @@
-const navToggle = document.querySelector("header nav .toggle"),
+const logoImage = document.querySelector("header nav .logo img");
+  navToggle = document.querySelector("header nav .toggle"),
   navSpanMiddle = document.querySelector("header nav .toggle .middle"),
   navNavigationBar = document.querySelector("header nav .navigation-bar"),
   navNavigationBarLi = document.querySelectorAll(
@@ -47,8 +48,10 @@ navLink.forEach(i => i.addEventListener('click', linkActive));
     darkMode = localStorage.getItem("darkMode");
     if (darkMode !== "enabled") {
       enableDarkMode();
+      logoImage.src = "/src/assets/logo/icons/logo-white.png"
     } else {
       disableDarkMode();
+      logoImage.src = "/src/assets/logo/icons/logo.png"
     }
   });
 })();

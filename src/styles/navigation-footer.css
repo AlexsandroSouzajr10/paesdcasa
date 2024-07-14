@@ -30,8 +30,8 @@ header .logo h1 span {
 header .logo img {
   position: absolute;
   top: 0;
-  transform: translate(-110%, 18%);
-  width: 50px;
+  transform: translate(-98%, -7%);
+  width: 70px;
 }
 
 header nav .logo {

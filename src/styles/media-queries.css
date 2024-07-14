@@ -22,9 +22,6 @@
     text-align: center;
     transition: 0.3s ease-in-out;
   }
-  header .logo img {
-    transform: translate(-115%, 18%);
-  }
   header nav .logo {
     display: flex;
     justify-content: center;
@@ -140,8 +137,8 @@
 
 @media only screen and (max-width: 320px) {
   header .logo img {
-    transform: translate(-110%, 18%);
-    width: 46px;
+    transform: translate(-98%);
+    width: 60px;
   }
 }
 
