@@ -53,8 +53,10 @@ navLink.forEach(i => i.addEventListener('click', linkActive));
     darkMode = localStorage.getItem("darkMode");
     if (darkMode !== "enabled") {
       enableDarkMode();
+      logoImage.src = "/src/assets/logo/icons/logo-white.png"
     } else {
       disableDarkMode();
+      logoImage.src = "/src/assets/logo/icons/logo.png"
     }
   });
 })();
