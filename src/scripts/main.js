@@ -5,12 +5,14 @@ const logoImage = document.querySelector("header nav .logo img");
   navNavigationBarLi = document.querySelectorAll(
     "header nav .navigation-bar li"
   );
+  menuOverlay = document.querySelector(".overlay");
 
 // Hamburger menu
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active");
   navSpanMiddle.classList.toggle("hide");
   navNavigationBar.classList.toggle("show");
+  menuOverlay.classList.toggle("active");
 });
 
 const navLink = document.querySelectorAll(".navlink a");
@@ -22,6 +24,7 @@ function linkActive() {
   navNavigationBar.classList.remove("show")
   navToggle.classList.remove("active");
   navSpanMiddle.classList.toggle("hide");
+  menuOverlay.classList.toggle("active");
 }
 
 navLink.forEach(i => i.addEventListener('click', linkActive));
@@ -38,20 +41,20 @@ navLink.forEach(i => i.addEventListener('click', linkActive));
   const disableDarkMode = () => {
     document.body.classList.remove("darkmode");
     localStorage.setItem("darkMode", null);
+    logoImage.src = "/src/assets/logo/icons/logo.png"
   };
 
   if (darkMode === "enabled") {
     enableDarkMode();
+    logoImage.src = "/src/assets/logo/icons/logo-white.png"
   }
 
   darkSwitch.addEventListener("click", () => {
     darkMode = localStorage.getItem("darkMode");
     if (darkMode !== "enabled") {
       enableDarkMode();
-      logoImage.src = "/src/assets/logo/icons/logo-white.png"
     } else {
       disableDarkMode();
-      logoImage.src = "/src/assets/logo/icons/logo.png"
     }
   });
 })();
@@ -189,6 +192,7 @@ $(document).ready(function(){
   const heroImage = document.querySelectorAll(".heroImage");
   const bgTitle = document.querySelectorAll(".bgTitle");
   const cardsImage = document.querySelectorAll(".imageCard")
+  const imageLoader = document.querySelectorAll(".imageLoader")
   
   window.addEventListener('load', () => {
       heroImage.forEach(item => {
@@ -199,5 +203,8 @@ $(document).ready(function(){
       })
       cardsImage.forEach(item => {
           item.classList.remove("imageCard")
+      })
+      imageLoader.forEach(item => {
+          item.classList.remove("imageLoader")
       })
   });

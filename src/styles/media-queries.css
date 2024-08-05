@@ -8,7 +8,7 @@
 @media (min-width: 921px) {
   .switch {
     position: relative;
-    top: 0.25rem;
+    top: .3rem;
     right: 30px;
     width: 47px;
     z-index: 1;
@@ -17,8 +17,9 @@
 
 @media only screen and (max-width: 920px) {
   header nav {
-    display: block;
+    display: flex;
     width: 100%;
+    padding: 10px 15px;
     text-align: center;
     transition: 0.3s ease-in-out;
   }
@@ -59,10 +60,10 @@
     display: block;
   }
   header nav .toggle.active {
-    top: 50%;
+    top: 45%;
   }
   header .navigation-bar .switch {
-    bottom: 19.89em;
+    bottom: 268px;
     left: 0;
   }
   header .navigation-bar .navigation__links {
@@ -73,14 +74,27 @@
     text-align: center;
     padding: 14px 0;
   }
-  header .navigation-bar .instagram__menu{
-    display: block;
+  .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.707);
+    /* opacity: 0;
+    visibility: hidden;
+    transition: 300ms ease-in-out; */
   }
-  header .navigation-bar .instagram__navigation{
-    display: none;
+  .overlay.active{
+    /* opacity: 1;
+    visibility: visible; */
+    display: block;
   }
   .about__us .about__content img {
     margin-bottom: 3%;
+  }
+  .about__content{
+    max-width: 900px;
   }
   .about__content h1 {
     margin-bottom: 25px;
@@ -106,7 +120,6 @@
     padding-top: 60px;
   }
   header .navigation-bar .switch {
-    bottom: 19.85em;
     left: 10px;
   }
   header nav .toggle.active {
@@ -120,11 +133,20 @@
 }
 
 @media only screen and (max-width: 380px) {
+  header nav{
+    display: block;
+  }
   header nav .logo {
     font-size: 12px;
+    white-space: normal;
   }
   header .navigation-bar {
     height: 100%;
+  }
+  header nav, .navigation-bar ul {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
   }
   header nav .toggle.active {
     left: 40%;
@@ -132,6 +154,12 @@
   header .navigation-bar.show {
     width: 55%;
     padding: 20px;
+  }
+  .instagram__navigation{
+    display: none;
+  }
+  .instagram__menu{
+    display: block;
   }
 }
 
@@ -196,18 +224,6 @@
   .background {
     width: auto;
     height: 100%;
-  }
-}
-
-@media only screen and (max-width: 735px){
-  .hero__content h2{
-    font-size: 2.95rem;
-  }
-}
-
-@media only screen and (max-width: 525px){
-  .hero__content h2{
-    font-size: 2.5rem;
   }
 }
 
@@ -351,7 +367,7 @@
   .banner-image {
     order: 1;
     max-width: 100%;
-    width: 90%;
+    width: 85%;
     height: auto;
   }
 }
@@ -480,5 +496,17 @@
 @media only screen and (orientation: landscape) {
   .cookies__container {
     bottom: -115%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  header nav {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  header nav .logo h1 span{
+    margin-left: 3.4rem;
   }
 }

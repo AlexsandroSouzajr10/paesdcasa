@@ -7,7 +7,7 @@ header nav {
   top: 0;
   width: 100%;
   background: var(--nav-color);
-  padding: 10px 0 10px;
+  padding: 10px 40px 10px;
   z-index: 20;
 }
 
@@ -35,8 +35,9 @@ header .logo img {
 }
 
 header nav .logo {
-  flex-basis: 30%;
+  flex-basis: 0%;
   padding-left: 50px;
+  white-space: nowrap;
 }
 
 header nav .navigation-bar{
@@ -45,7 +46,7 @@ header nav .navigation-bar{
 
 header nav, .navigation-bar ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -117,18 +118,21 @@ header .navigation-bar a {
 header .navigation-bar .underline {
   display: block;
   position: absolute;
-  width: 0%;
+  width: 100%;
+  transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
   translate: 0 4px;
+  transform-origin: bottom right;
   background: var(--navigation-underline);
-  transition: 350ms ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 .navigation-bar a:hover .underline,
 .navigation-bar a.active .underline{
-  width: 100%;
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 header nav .toggle {
@@ -186,6 +190,10 @@ header nav .toggle span:not(:last-of-type) {
   margin-bottom: 6px;
 }
 
+.overlay{
+  display: none;
+}
+
 .switch {
   position: relative;
   display: block;
@@ -198,7 +206,7 @@ header nav .toggle span:not(:last-of-type) {
 .switch-light,
 .switch-dark {
   position: absolute;
-  top: 0%;
+  top: 0;
   left: 120%;
   transform-origin: center;
   transform: translate(-50%, -50%);
@@ -274,10 +282,9 @@ footer .container__footer {
 
 footer .container__footer img {
   position: absolute;
-  transform: translate(-50%, -75%);
-  width: 110px;
+  transform: translate(-50%, -110%);
+  width: 95px;
   height: auto;
-  padding-bottom: 10px;
 }
 
 footer .container__footer .logo {

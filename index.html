@@ -34,7 +34,7 @@
               <li class="navlink"><a href="#historia"><span class="underline"></span>Sobre nós</a></li>
               <li class="navlink"><a href="#produtos"><span class="underline"></span>Produtos</a></li>
               <li class="navlink"><a href="#combos"><span class="underline"></span>Combos</a></li>
-              <li class="navlink"><a href="#posts"><span class="underline"></span>Posts</a></li>
+              <!-- <li class="navlink"><a href="#posts"><span class="underline"></span>Posts</a></li> -->
               <li class="navlink"><a href="#avaliacoes"><span class="underline"></span>Avaliações</a></li>
               <span class="border"></span>
               <button class="switch" id="switch">
@@ -45,28 +45,29 @@
                   <span class="ri-moon-line"></span>
                 </div>
               </button>
-            <div class="instagram__menu">
-              <a href="https://www.instagram.com/paesdcasaoficial/">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
-              </a>
-            </div>
-            <a href="https://www.instagram.com/paesdcasaoficial/" target="_blank">
-              <svg class="instagram__navigation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
-            </a>
-          </ul>
-        </div>
+              <div class="instagram__menu">
+                <a href="https://www.instagram.com/paesdcasaoficial/">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
+                </a>
+              </div>
+            </ul>
+          </div>
+          <a href="https://www.instagram.com/paesdcasaoficial/" target="_blank">
+            <svg class="instagram__navigation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path></svg>
+          </a>
         <div class="toggle">
           <span class="first"></span>
           <span class="middle"></span>
           <span class="last"></span>
         </div>
       </nav>
+      <div class="overlay"></div>
       <main id="inicio" class="hero heroImage">
         <div id="pictures"></div>
         <div class="hero__content">
           <h2>Seja bem vindo a <span>Pães d'Casa</span></h2>
           <p>
-            Experimente as delícias da nossa padaria no morada do sol, Maracanã
+            Experimente as delícias da nossa padaria no Morada do Sol, Maracanã
             São Luís - MA. Com qualidade e sabor que você merece!
           </p>
           <a href="#historia">
@@ -290,29 +291,13 @@
       <section class="posters__section">
         <div class="poster__wrapper">
           <div class="poster__card">
-            <div class="image__box">
+            <div class="image__box imageLoader">
               <img src="/src/assets/home/combos/Combo de coxinha.png" alt="Combo de coxinha" title="Combo de coxinha" />
               <div class="text">
                 <span>Imagens ilustrativas</span>
               </div>
               <div class="poster__content">
-                <a onclick="location.href='javascript:void()'" class="Disabled combo-1 order-direct">
-                  <h3>Solicitar combo</h3>
-                  <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
-                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="poster__card">
-            <div class="image__box">
-              <img src="/src/assets/home/combos/Combo de Esfirra de Carne.png" alt="Combo de Esfirra de Carne" title="Combo de Esfirra de Carne" />
-              <div class="text">
-                <span>Imagens ilustrativas</span>
-              </div>
-              <div class="poster__content">
-                <a onclick="location.href='javascript:void()'" class="Disabled combo-2 order-direct">
+                <a onclick="location.href='javascript:void()'" class=" combo-1 order-direct">
                   <h3>Solicitar combo</h3>
                   <span class="ri-arrow-right-line arrow-right"></span>
                 </a>
@@ -320,13 +305,27 @@
             </div>
           </div>
           <div class="poster__card">
-            <div class="image__box">
+            <div class="image__box imageLoader">
+              <img src="/src/assets/home/combos/Combo de Esfirra de Carne.png" alt="Combo de Esfirra de Carne" title="Combo de Esfirra de Carne" />
+              <div class="text">
+                <span>Imagens ilustrativas</span>
+              </div>
+              <div class="poster__content">
+                <a onclick="location.href='javascript:void()'" class=" combo-2 order-direct">
+                  <h3>Solicitar combo</h3>
+                  <span class="ri-arrow-right-line arrow-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="poster__card">
+            <div class="image__box imageLoader">
               <img src="/src/assets/home/combos/Combo do Salgado Joelho.png" alt="Combo do Salgado Joelho" title="Combo do Salgado Joelho" />
               <div class="text">
                 <span>Imagens ilustrativas</span>
               </div>
               <div class="poster__content">
-                <a onclick="location.href='javascript:void()'" class="Disabled combo-3 order-direct">
+                <a onclick="location.href='javascript:void()'" class=" combo-3 order-direct">
                   <h3>Solicitar combo</h3>
                   <span class="ri-arrow-right-line arrow-right"></span>
                 </a>
@@ -345,17 +344,17 @@
       <section class="posters__section">
         <div class="poster__wrapper">
           <div class="poster__card">
-            <div class="image__box">
+            <div class="image__box imageLoader">
               <img src="/src/assets/home/posts/As melhores coxinhas.png" alt="As melhores coxinhas" title="As melhores coxinhas" />
             </div>
           </div>
           <div class="poster__card">
-            <div class="image__box">
+            <div class="image__box imageLoader">
               <img src="/src/assets/home/posts/2.png" alt="Você é time Frango ou Carne?" title="Você é time Frango ou Carne?" />
             </div>
           </div>
           <div class="poster__card">
-            <div class="image__box">
+            <div class="image__box imageLoader">
               <img src="/src/assets/home/posts/3.png" alt="Bora uma coxinha hoje?" title="Bora uma coxinha hoje?" />
             </div>
           </div>
@@ -385,7 +384,7 @@
           <h2>Entrega rapida</h2>
           <p>Entregamos nas três localidades: Santo Antônio, Morada do Sol comtemplados e ocupação, e Amendoeiras</p>
         </div>
-        <div class="image__box">
+        <div class="image__box imageLoader">
           <img src="/src/assets/home/icons/entregador.png" alt="Entregador" />
         </div>
       </section>
@@ -397,7 +396,7 @@
           <h2>Melhor atendimento</h2>
           <p>Um atendimento excelente e agradável e amigável com os nossos clientes</p>
         </div>
-        <div class="image__box-two">
+        <div class="image__box-two imageLoader">
           <img src="/src/assets/home/icons/atendimento.png" alt="mulher atendendo o usuario" />
         </div>
       </section>
@@ -548,7 +547,7 @@
         <h2 class="logo">Pães d'Casa</h2>
         <p class="slogan">Qualidade e sabor que você merece!</p>
         <p class="instagram"><a href="https://www.instagram.com/paesdcasaoficial/">@paesdcasaoficial</a></p>
-        <span>&copy; Copyright 2022-2024 Pães d'Casa</span>
+        <span>&copy; Copyright 2024 Pães d'Casa</span>
       </div>
       <h3>Desenvolvido por <a href="https://www.instagram.com/alexsandrosouzajr/" target="_blank">Alexsandro</a></span>
     </footer>
