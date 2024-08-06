@@ -118,21 +118,18 @@ header .navigation-bar a {
 header .navigation-bar .underline {
   display: block;
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
+  width: 0;
   height: 2px;
   bottom: 0;
   left: 0;
   translate: 0 4px;
-  transform-origin: bottom right;
   background: var(--navigation-underline);
-  transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .navigation-bar a:hover .underline,
 .navigation-bar a.active .underline{
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  width: 100%;
 }
 
 header nav .toggle {
@@ -259,12 +256,22 @@ header .navigation-bar.show .instagram__menu {
   fill: #777;
 }
 
-.instagram__navigation{
-  width: 24px;
-  height: 24px;
-  margin: 0 10px;
-  margin-top: 3px;
+.instagram__navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--background-icone-instagram);
+  border: 1px solid var(--border-icone-instagram);
+  border-radius: 50px;
+}
+
+.instagram__navbar svg{
+  width: 28px;
+  height: 28px;
   fill: var(--fill__instagram);
+  vertical-align: middle;
 }
 
 footer {

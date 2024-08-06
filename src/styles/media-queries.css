@@ -15,7 +15,7 @@
   }
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 935px) {
   header nav {
     display: flex;
     width: 100%;
