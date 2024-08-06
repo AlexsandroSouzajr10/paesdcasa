@@ -334,7 +334,7 @@ p {
     width: 100%;
     max-width: 1500px;
     margin: auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   
   .menu__cards__container .menu__card__item {
@@ -374,24 +374,20 @@ p {
   .menu__card__item .menu__card__content p {
     color: var(--menu__card__description);
   }
-  
+
   .product__cards__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
-    margin: auto;
   }
 
   .product__cards__container .product__cards__inner{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    max-width: 1800px;
-    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+    place-items: center;
+    max-width: 1320px;
+    grid-gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
   }
 
   .product__cards__inner .product__card__item{
@@ -438,8 +434,20 @@ p {
     color: var(--color__order__card);
   }
 
+  .product__card__content .order-btn{
+    background: var(--order-btn-background);
+    color: var(--order-btn-color);
+    padding: .35rem .65rem;
+    border-radius: 6px;
+    transition: 300ms;
+  }
+  
+  .product__card__content .order-btn:hover{
+    background: var(--order-btn-background-hover);
+  }
+
   .arrow-right{
-    color: var(--color__order__card);
+    color: var(--order-btn-color);
     transition: 300ms ease-in-out;
   }
 
@@ -496,7 +504,7 @@ p {
   .poster__wrapper .poster__content{
     display: block;
     position: relative;
-    bottom: 20px;
+    bottom: 15px;
     text-align: center;
     padding: 15px;
   }
@@ -505,16 +513,19 @@ p {
     display: flex;
     margin: auto;
     max-width: max-content;
-    height: 30px;
-    padding: 10px 0;
     color: var(--products-combos-order-color);
     margin-bottom: 1em;
+    background: var(--order-btn-background);
+    padding: .35rem .65rem;
+    border-radius: 6px;
+    transition: 300ms;
   }
 
   .poster__content .order-direct .arrow-right{
     font-size: 18px;
     padding: 0 5px;
     transition: .3s ease-in-out;
+    color: var(--products-combos-order-color);
   }
 
   .poster__content .order-direct:hover .arrow-right{
@@ -885,24 +896,26 @@ p {
     animation: load 3s .25s linear forwards;
   }
 
-  .Disabled {
+  .disabled {
     color: currentColor;
     cursor: not-allowed;
-    opacity: .5;
+    opacity: .35;
     text-decoration: none;
   }
 
   .heroImage,
   .bgTitle,
   .imageCard,
-  .imageLoader {
+  .imageLoader,
+  .sectionLoader {
     position: relative;
   }
 
   .heroImage::before,
   .bgTitle::before,
   .imageCard::before,
-  .imageLoader::before {
+  .imageLoader::before,
+  .sectionLoader::before {
     content: "";
     position: absolute;
     top: 0;

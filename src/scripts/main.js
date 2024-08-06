@@ -5,7 +5,7 @@ const logoImage = document.querySelector("header nav .logo img");
   navNavigationBarLi = document.querySelectorAll(
     "header nav .navigation-bar li"
   );
-  menuOverlay = document.querySelector(".overlay");
+  const menuOverlay = document.querySelector(".overlay");
 
 // Hamburger menu
 navToggle.addEventListener("click", () => {
@@ -195,6 +195,7 @@ $(document).ready(function(){
   const bgTitle = document.querySelectorAll(".bgTitle");
   const cardsImage = document.querySelectorAll(".imageCard")
   const imageLoader = document.querySelectorAll(".imageLoader")
+  const sectionLoader = document.querySelectorAll(".sectionLoader")
   
   window.addEventListener('load', () => {
       heroImage.forEach(item => {
@@ -208,5 +209,8 @@ $(document).ready(function(){
       })
       imageLoader.forEach(item => {
           item.classList.remove("imageLoader")
+      })
+      sectionLoader.forEach(item => {
+          item.classList.remove("sectionLoader")
       })
   });
