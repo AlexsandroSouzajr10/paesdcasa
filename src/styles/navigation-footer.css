@@ -9,6 +9,9 @@ header nav {
   background: var(--nav-color);
   padding: 10px 40px 10px;
   z-index: 20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .logo h1 {
@@ -46,7 +49,6 @@ header nav .navigation-bar{
 
 header nav, .navigation-bar ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -90,6 +92,10 @@ header .navigation-bar.show ul li:nth-child(6) {
 
 header .navigation-bar.show ul .instagram__menu {
   animation-delay: 1.4s;
+}
+
+header .navigation-bar.show ul .whatsapp__menu {
+  animation-delay: 1.6s;
 }
 
 header .navigation-bar.show .underline {
@@ -232,28 +238,61 @@ header nav .toggle span:not(:last-of-type) {
   visibility: visible;
 }
 
-header .navigation-bar.show .instagram__menu {
+header .navigation-bar.show :where(.instagram__menu, .whatsapp__menu) {
   animation: show 0.6s backwards;
 }
 
-.instagram__menu{
+.socials__menu{
   display: none;
-  border-top: 1px solid #000;
-  width: 90px;
-  max-width: 100%;
-  margin: auto;
-  padding: 1em;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.instagram__menu .whatsapp__menu{
+  display: none;
+}
+
+.instagram__menu{
+  width: 40px;
+  height: 40px;
+  background: var(--background-icone-instagram);
+  border: 1px solid var(--border-icone-instagram);
+  border-radius: 50px;
+  transition: 300ms ease-in;
 }
 
 .instagram__menu svg{
   width: 24px;
   height: 24px;
-  fill: var(--fill__instagram);
+  fill: var(--color-icone-instagram);
 }
 
-.instagram__menu svg:hover,
-.instagram__navigation:hover{
+.instagram__menu svg:hover{
   fill: #777;
+}
+
+.whatsapp__menu{
+  width: 40px;
+  height: 40px;
+  background: var(--background-icone-whatsapp);
+  border: 1px solid var(--border-icone-whatsapp);
+  border-radius: 50px;
+  transition: 300ms ease-in;
+}
+
+.whatsapp__menu svg{
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp__menu svg:hover{
+  fill: #777;
+}
+
+.navbar__right{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .instagram__navbar{
@@ -265,13 +304,46 @@ header .navigation-bar.show .instagram__menu {
   background: var(--background-icone-instagram);
   border: 1px solid var(--border-icone-instagram);
   border-radius: 50px;
+  transition: 300ms ease-in;
 }
 
 .instagram__navbar svg{
-  width: 28px;
-  height: 28px;
-  fill: var(--fill__instagram);
+  width: 22px;
+  height: 22px;
+  fill: var(--color-icone-instagram);
   vertical-align: middle;
+}
+
+.whatsapp__navbar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: var(--background-icone-whatsapp);
+  border: 1px solid var(--border-icone-whatsapp);
+  border-radius: 50px;
+  transition: 300ms ease-in;
+}
+
+.whatsapp__navbar svg{
+  width: 22px;
+  height: 22px;
+  color: var(--color-icone-whatsapp);
+  vertical-align: middle;
+}
+
+.instagram__navbar:hover{
+  background: rgb(242, 97, 34);
+}
+
+.whatsapp__navbar:hover{
+  background: #00bb2cd1;
+}
+
+:where(.whatsapp__navbar, .instagram__navbar):hover svg{
+  color: #fff;
+  fill: #fff;
 }
 
 footer {

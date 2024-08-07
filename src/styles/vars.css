@@ -18,9 +18,15 @@
   --navigation-bar-navlinks: #f7291a;
   --navigation-border: #000;
   --switch-color: #000;
-  --fill__instagram: #000;
+  --color-icone-instagram: #101010;
   --background-icone-instagram: #fafafa;
   --border-icone-instagram: rgba(210, 210, 210, 0.661);
+  --background-icone-whatsapp: #fafafa;
+  --border-icone-whatsapp: rgba(210, 210, 210, 0.661);
+  --color-icone-whatsapp: #101010;
+
+  --border-color-instagram-menu: #000;
+
   --background-skeleton: #e2e5e7;
   --background-skeleton-color-primary: rgba(255, 255, 255, 0);
   --background-skeleton-color-secondary: rgba(255, 255, 255, 0.9);
@@ -70,9 +76,14 @@ body.darkmode {
   --navigation-border: #f5f5f5;
   --navigation-bar-navlinks: #f5f5f5;
   --switch-color: #f5f5f5;
-  --fill__instagram: #f5f5f5;
+  --color-icone-instagram: #f5f5f5;
   --background-icone-instagram: #5353534c;
   --border-icone-instagram: rgba(255, 255, 255, 0.116);
+  --background-icone-whatsapp: #5353534c;
+  --border-icone-whatsapp: rgba(255, 255, 255, 0.116);
+  --color-icone-whatsapp: #f5f5f5;
+
+  --border-color-instagram-menu: #f5f5f5;
   --background-skeleton: #202020;
   --background-skeleton-color-primary: rgba(40, 40, 40, 0);
   --background-skeleton-color-secondary: rgba(40, 40, 40, 0.9);

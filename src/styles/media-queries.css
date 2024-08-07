@@ -5,7 +5,7 @@
   }
 }
 
-@media (min-width: 921px) {
+@media (min-width: 961px) {
   .switch {
     position: relative;
     top: .3rem;
@@ -15,7 +15,13 @@
   }
 }
 
-@media only screen and (max-width: 935px) {
+@media only screen and (max-width: 1000px){
+  header nav {
+    padding: 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
   header nav {
     display: flex;
     width: 100%;
@@ -63,15 +69,15 @@
     top: 45%;
   }
   header .navigation-bar .switch {
-    bottom: 268px;
-    left: 0;
+    position: relative;
+    bottom: 312px;
   }
   header .navigation-bar .navigation__links {
     display: block;
     padding-top: 40px;
   }
   header .navigation-bar .navigation__links .navlink {
-    text-align: center;
+    text-align: left;
     padding: 14px 0;
   }
   .overlay{
@@ -133,10 +139,25 @@
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 435px){
+  .instagram__navbar,
+  .whatsapp__navbar{
+    display: none;
+  }
+  .socials__menu{
+    display: flex;
+  }
+  .instagram__menu, .whatsapp__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header nav{
     display: block;
   }
+}
+
+@media only screen and (max-width: 380px) {
   header nav .logo {
     font-size: 12px;
     white-space: normal;
@@ -155,12 +176,6 @@
   header .navigation-bar.show {
     width: 55%;
     padding: 20px;
-  }
-  .instagram__navigation{
-    display: none;
-  }
-  .instagram__menu{
-    display: block;
   }
 }
 
@@ -422,6 +437,12 @@
   }
   .menu__cards__container .menu__card__item {
     margin-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 345px){
+  .product__cards__container .product__cards__inner{
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
 }
 
