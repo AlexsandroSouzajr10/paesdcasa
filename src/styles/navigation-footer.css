@@ -182,7 +182,7 @@ header nav .toggle span {
   display: block;
   position: relative;
   bottom: 5px;
-  width: 30px;
+  width: 26px;
   height: 2px;
   background-color: var(--menu);
   border-radius: 40px;
